@@ -1,15 +1,15 @@
 # Credit Card Fraud Detection
-#### BUSINESS PROBLEM
+### BUSINESS PROBLEM
 Payment card fraud is a growing concern around the world, not only for financial institutions, but also for individuals whose identities may be stolen to commit the fraud. Payment card fraud can be broadly classified into two categories:
 1.	Application Fraud 
 2.	Transaction Fraud
 
 According to the Federal Trade Commission, there were more than 250,000 reports of credit card fraud in the year 2019. The graph below shows the yearly trend of credit card fraud in the United States for the past five years
  
-#### OBJECTIVE
+### OBJECTIVE
 In this project, our objective is to curtail credit card transaction fraud by assigning a real-time fraud score to each and every transaction using supervised classification models built using Logistic Regression, Neural Networks, Boosted Trees and Random Forest. The data we used in this project consists of credit card transaction data for all the days in the year 2010, with each record identified either as a fraudulent or genuine transaction.
 
-#### PROJECT OVERVIEW
+### PROJECT OVERVIEW
 Given below is a high-level outline of the steps we took to achieve the objective of the project:
 1.	**Exploratory Data Analysis and Data Cleaning**: The data consists of 10 fields and 96753 records. We only retained the records with transaction type ‘P’(Payment) and imputed some missing values for the fields merchant number, merchant zip code and merchant state. 
 2.	**Feature Engineering and Feature Selection**: We engineered features by combining fields such as card number and merchant number with the average/median amount spent in each transaction. We also created days since variables and velocity variables for the combination variables. Among the 343 variables that were engineered, the 30 most relevant features were selected using a random forest wrapper. 
